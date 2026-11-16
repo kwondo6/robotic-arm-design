@@ -1,0 +1,15 @@
+Part no.,Item,Qty,Material / spec,Supplier,Supplier part no.,Unit price (NZD),Line total (NZD),Link,Notes
+ARM-001,Base plate (laser cut),1,,,,,,,
+ARM-002,Turntable plate (laser cut),1,,,,,,,
+ARM-003,Shoulder bracket (sheet metal),2,,,,,,,Most loaded part: stress study
+ARM-004,Upper arm link (laser cut),2,,,,,,,
+ARM-005,Forearm link (laser cut),2,,,,,,,
+ARM-006,End plate or gripper,1,,,,,,,
+SRV-001,Base servo,1,,,,,,,
+SRV-002,Shoulder servo,1,,,,,,,
+SRV-003,Elbow servo,1,,,,,,,
+BRG-001,Turntable bearing,1,,,,,,,
+BRG-002,Joint bearings,4,,,,,,,
+FST-001,M3 socket head screws,,,,,,,,
+FST-002,M3 nuts,,,,,,,,
+FST-003,M3 standoffs,,,,,,,,

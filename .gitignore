@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
