@@ -6,7 +6,7 @@ ARM-004,Upper arm link,2,3 mm 5052 aluminium,L1 = 140 mm between joint axes
 ARM-005,Forearm link,2,3 mm 5052 aluminium,Part of L2 = 140 mm (elbow axis to tool point)
 ARM-006,End plate,1,3 mm 5052 aluminium,Bolt holes for a gripper
 SRV-001,Base servo,1,DSSERVO DS3218MG (270 deg),
-SRV-002,Shoulder servo,1,DSSERVO DS3218MG (270 deg),
+SRV-002,Shoulder servo,1,DSSERVO DS3235 (270 deg),Stronger servo for the 200 g payload
 SRV-003,Elbow servo,1,DSSERVO DS3218MG (270 deg),
 BRG-001,Turntable bearing,1,,
 BRG-002,Joint bearings,4,,

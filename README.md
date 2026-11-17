@@ -4,7 +4,7 @@
 
 A 3-joint desktop robotic arm designed in Autodesk Fusion as if it were going to be manufactured: 3 mm aluminium plate, off-the-shelf bearings, M3 fasteners and DS3218MG servos. It is checked against written requirements with Fusion stress and motion studies, and with Python kinematics, workspace and servo-torque analysis.
 
-**Status:** Week 1 of 4: requirements and concept.
+**Status:** Week 1 of 4: spec frozen; concept sketch next.
 
 ## Spec at a glance
 
@@ -12,8 +12,8 @@ A 3-joint desktop robotic arm designed in Autodesk Fusion as if it were going to
 | --- | --- |
 | Joints | Base rotation, shoulder, elbow, plus an end plate (a gripper if time allows) |
 | Reach | 250 mm on the desk (L1 = L2 = 140 mm) |
-| Payload | 100 g |
-| Actuators | DSSERVO DS3218MG servo at every joint |
+| Payload | 200 g |
+| Actuators | DSSERVO DS3235 at the shoulder, DS3218MG at the base and elbow |
 | Construction | 3 mm 5052 aluminium, laser-cut or bent; off-the-shelf bearings; M3 fasteners; no 3D-printed parts |
 
 The full numbered requirements are in [docs/design-spec.md](docs/design-spec.md). The checks are in [docs/verification-plan.md](docs/verification-plan.md).
@@ -52,12 +52,12 @@ First-time setup on Windows is covered in [SETUP.md](SETUP.md).
 
 ### This week
 
-- [ ] Tools installed and first push to GitHub ([SETUP.md](SETUP.md))
+- [x] Tools installed and first push to GitHub ([SETUP.md](SETUP.md))
 - [x] `python/arm_2link_pose.py` runs
-- [ ] Fill in and freeze [docs/design-spec.md](docs/design-spec.md)
-- [ ] First draft of [docs/verification-plan.md](docs/verification-plan.md)
+- [x] Fill in and freeze [docs/design-spec.md](docs/design-spec.md)
+- [x] First draft of [docs/verification-plan.md](docs/verification-plan.md)
 - [ ] Concept sketch saved as `media/concept-sketch.jpg`
-- [x] Servo chosen: DS3218MG ([docs/servo-selection.md](docs/servo-selection.md))
+- [x] Servos chosen: DS3235 at the shoulder, DS3218MG at the base and elbow ([docs/servo-selection.md](docs/servo-selection.md))
 
 ### Done when (v1.0)
 
@@ -71,5 +71,5 @@ First-time setup on Windows is covered in [SETUP.md](SETUP.md).
 
 One line at the end of each week: what got done, and the top three tasks for next week.
 
-- **2026-11-18:** Python 3.15 environment working. Decided 140/140 mm links, 3 mm 5052 aluminium, an end plate and DS3218MG servos. Dropped costing to focus on CAD, simulation and Python.
+- **2026-11-18:** Python 3.15 environment working; first push to GitHub. Spec frozen: 140/140 mm links, 200 g payload, 3× servo margin, FEA safety factor 3, 3 mm 5052 aluminium, end plate. Servos: DS3235 at the shoulder, DS3218MG at the base and elbow. Dropped costing to focus on CAD, simulation and Python.
 - **2026-11-16:** Repo set up with folder layout, spec and verification templates, and the Week 1 starter script.
