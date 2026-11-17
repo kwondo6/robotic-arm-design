@@ -26,7 +26,7 @@ py list
 python --version
 ```
 
-`python --version` should print `Python 3.15.x`. If it shows an older version, use `py -V:3.15` instead of `python` in step 5 to create the environment. Once the environment is active, plain `python` is the right one.
+`py list` should show 3.15 marked with a `*`. Don't worry if `python --version` shows an older version: another program's Python (MSYS2's, on this PC) comes first on your PATH. Step 5 creates the project environment with `py`, and inside that environment `python` is 3.15.
 
 ## 2. Git
 
@@ -68,10 +68,13 @@ code .
 In VS Code, open a terminal (Ctrl + `) and run:
 
 ```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
+py -V:3.15 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python --version
 python -m pip install -r requirements.txt
 ```
+
+`python --version` should print `Python 3.15.x` once the environment is active. Always create the environment with `py`, not `python`: plain `python` on this PC is MSYS2's Python, which makes an environment that Windows packages don't install into.
 
 - If activation fails with "running scripts is disabled on this system", run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` once, then try again.
 - When the environment is active, the prompt starts with `(.venv)`.
@@ -137,6 +140,7 @@ At the end of each week, add one line to the README progress log.
 | --- | --- |
 | `python` opens the Microsoft Store | Finish step 1, then open a new terminal |
 | `git` or `py` is "not recognized" | Close and reopen the terminal (and VS Code) after installing |
+| Activating says "The module '.venv' could not be loaded" | The environment was made by the wrong Python: `.venv` has a `bin` folder instead of `Scripts`. Delete it with `Remove-Item -Recurse -Force .venv` and redo step 5 |
 | `pip install` tries to build numpy from source | You're on the wrong Python: check `python --version` inside the activated `.venv` |
 | No plot window, but the script finishes | The PNG is still saved in `media\`; check that the right interpreter is selected in VS Code |
 | Stuck for more than 2 hours | Stop, ask (MATLAB Answers, a classmate, or Claude), and move on to another task while you wait |

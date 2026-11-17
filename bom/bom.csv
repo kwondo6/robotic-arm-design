@@ -1,15 +1,15 @@
-Part no.,Item,Qty,Material / spec,Supplier,Supplier part no.,Unit price (NZD),Line total (NZD),Link,Notes
-ARM-001,Base plate (laser cut),1,,,,,,,
-ARM-002,Turntable plate (laser cut),1,,,,,,,
-ARM-003,Shoulder bracket (sheet metal),2,,,,,,,Most loaded part: stress study
-ARM-004,Upper arm link (laser cut),2,,,,,,,
-ARM-005,Forearm link (laser cut),2,,,,,,,
-ARM-006,End plate or gripper,1,,,,,,,
-SRV-001,Base servo,1,,,,,,,
-SRV-002,Shoulder servo,1,,,,,,,
-SRV-003,Elbow servo,1,,,,,,,
-BRG-001,Turntable bearing,1,,,,,,,
-BRG-002,Joint bearings,4,,,,,,,
-FST-001,M3 socket head screws,,,,,,,,
-FST-002,M3 nuts,,,,,,,,
-FST-003,M3 standoffs,,,,,,,,
+Part no.,Item,Qty,Material / spec,Notes
+ARM-001,Base plate,1,3 mm 5052 aluminium,
+ARM-002,Turntable plate,1,3 mm 5052 aluminium,
+ARM-003,Shoulder bracket,2,3 mm 5052 aluminium (bent),Most loaded part: stress study
+ARM-004,Upper arm link,2,3 mm 5052 aluminium,L1 = 140 mm between joint axes
+ARM-005,Forearm link,2,3 mm 5052 aluminium,Part of L2 = 140 mm (elbow axis to tool point)
+ARM-006,End plate,1,3 mm 5052 aluminium,Bolt holes for a gripper
+SRV-001,Base servo,1,DSSERVO DS3218MG (270 deg),
+SRV-002,Shoulder servo,1,DSSERVO DS3218MG (270 deg),
+SRV-003,Elbow servo,1,DSSERVO DS3218MG (270 deg),
+BRG-001,Turntable bearing,1,,
+BRG-002,Joint bearings,4,,
+FST-001,M3 socket head screws,,,
+FST-002,M3 nuts,,,
+FST-003,M3 standoffs,,,
